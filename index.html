@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 11</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <style>
+        .card .card-body .date{
+            font-size: 15px;
+            color: gray;
+            margin-top: -10px;
+        }
+        .card .card-body .card-title{
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        .card .card-header a{
+            text-decoration: none;
+            display: block;
+            font-size: 28px;
+            font-weight: bold;
+            color: #000;
+        }
+        .card .card-header a .fa-chevron-down{
+            display: none;
+        }
+        /*card .card-header a .fa-chevron-down{
+            display: block;
+        }*/
+        .card .icon{
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            display: block;
+            padding: 12px;
+            position: relative;
+        }
+        .icon i{
+            font-size: 30px;
+        }
+        .card a::before {
+            content: '\f054';
+            font-family: 'Font Awesome 7 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 180px;
+            top: 12px;
+            font-size: 22px;
+        }
+
+        .card a[aria-expanded="true"]::before {
+            transform: rotate(90deg);
+            color: #000;
+        }
+
+        .card .icon::before{
+            content: "";
+            width: 3px;
+            height: 50px;
+            background-color: #ddd;
+            position: absolute;
+            top: 130%;
+            left: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8 mx-auto mb-5">
+                            <div class="card" >
+                                <div class="card-header">
+                                    <a data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="true" aria-controls="collapseExample">
+                                        Education
+                                    </a>
+                                </div>
+                                <div class="collapse" id="collapseExample1">
+                                    <ul type="none">
+                                        <li>
+                                            <div class="card-body d-flex py-4">
+                                            <div class="icon bg-secondary-subtle me-4">
+                                                <i class="fa-solid fa-graduation-cap"></i>
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="card-title">
+                                                    The University of Manchester - Manchester
+                                                </h4>
+                                                <p class="card-text">
+                                                    Master's degree in computer software engineering
+                                                </p>
+                                                <p class="date">
+                                                    October 2024 to December 2026
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card-body d-flex">
+                                                <div class="icon bg-secondary-subtle me-4">
+                                                    <i class="fa-solid fa-graduation-cap"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <h4 class="card-title">
+                                                        The University of Manchester - Manchester
+                                                    </h4>
+                                                    <p class="card-text">
+                                                        Master's degree in computer software engineering
+                                                    </p>
+                                                    <p class="date">
+                                                        October 2024 to December 2026
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card-body d-flex ">
+                                                <div class="icon bg-secondary-subtle me-4">
+                                                    <i class="fa-solid fa-graduation-cap"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <h4 class="card-title">
+                                                        The University of Manchester - Manchester
+                                                    </h4>
+                                                    <p class="card-text">
+                                                        Master's degree in computer software engineering
+                                                    </p>
+                                                    <p class="date">
+                                                        October 2024 to December 2026
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                </div>
+                    
+                </div>
+                <div class="col-12 col-lg-8 mx-auto">
+                            <div class="card" >
+                                <div class="card-header">
+                                    <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true" aria-controls="collapseExample">
+                                        Experience
+                                    </a>
+                                </div>
+                                <div class="collapse" id="collapseExample">
+                                    <ul type="none">
+                                        <li>
+                                            <div class="card-body d-flex py-4">
+                                            <div class="icon bg-secondary-subtle me-4">
+                                                <i class="fa-solid fa-briefcase"></i>
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="card-title">
+                                                    Senior Software Engineer
+                                                </h4>
+                                                <p class="card-text">
+                                                    Google - American
+                                                </p>
+                                                <p class="date">
+                                                    Novemver 2020 to December 2026
+                                                </p>
+                                                <p class="card-text">
+                                                    Work in Google is one of the beautiful experience I can do in my entire lift. There are a lot of interesting thin to learn and manager respect you time and your personality...
+                                                </p>
+                                                
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card-body d-flex py-4">
+                                            <div class="icon bg-secondary-subtle me-4">
+                                                <i class="fa-solid fa-briefcase"></i>
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="card-title">
+                                                    Senior Software Engineer
+                                                </h4>
+                                                <p class="card-text">
+                                                    Google - American
+                                                </p>
+                                                <p class="date">
+                                                    Novemver 2020 to December 2026
+                                                </p>
+                                                <p class="card-text">
+                                                    Work in Google is one of the beautiful experience I can do in my entire lift. There are a lot of interesting thin to learn and manager respect you time and your personality...
+                                                </p>
+                                                
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card-body d-flex py-4">
+                                            <div class="icon bg-secondary-subtle me-4">
+                                                <i class="fa-solid fa-briefcase"></i>
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="card-title">
+                                                    Senior Software Engineer
+                                                </h4>
+                                                <p class="card-text">
+                                                    Google - American
+                                                </p>
+                                                <p class="date">
+                                                    Novemver 2020 to December 2026
+                                                </p>
+                                                <p class="card-text">
+                                                    Work in Google is one of the beautiful experience I can do in my entire lift. There are a lot of interesting thin to learn and manager respect you time and your personality...
+                                                </p>
+                                                
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
